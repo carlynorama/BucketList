@@ -23,5 +23,7 @@ struct Location: Identifiable {
         self.coordinate.latitude == locationToCheck.coordinate.latitude && self.coordinate.longitude == locationToCheck.coordinate.longitude
     }
     
+    //TODO: Return title and subtitle to optionals and Re-add wrapped value getter and setter once EditLocationView stops crashing?
+    
 }
 
