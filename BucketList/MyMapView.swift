@@ -48,7 +48,7 @@ struct MyMapView: View {
                 .fill(Color.blue)
                 .frame(width: 32, height: 32)
                 .opacity(0.3)
-                //TODO: This should be disabling the blocking of the clicking through, but is not.
+                //TODO: One of these should be disabling the blocking of the clicking through, but neither do.
                 .allowsHitTesting(false)
                 .disabled(true)
                 
