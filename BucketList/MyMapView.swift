@@ -7,7 +7,6 @@
 
 import SwiftUI
 import MapKit
-import Combine
 
 struct MyMapView: View {
     @State private var showingPlaceDetails = false
@@ -78,9 +77,9 @@ struct MyMapView: View {
                 })
         })
         .sheet(isPresented: $showingEditScreen) {
-            EditLocationView() //location: $locationStore.locations[locationStore.selectedLocationIndex]
+            EditLocationView(location: $locationStore.locations[locationStore.selectedLocationIndex])
         }
-        .environmentObject(locationStore)
+        //.environmentObject(locationStore)
         
     }
 }
