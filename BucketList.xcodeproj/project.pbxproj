@@ -23,6 +23,7 @@
 		D289A1A8267A6B1C00C1C631 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D289A1A7267A6B1C00C1C631 /* Location.swift */; };
 		D289A1AA267A6B4400C1C631 /* LocationsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D289A1A9267A6B4400C1C631 /* LocationsStore.swift */; };
 		D289A1AC267A85D500C1C631 /* EditLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D289A1AB267A85D500C1C631 /* EditLocationView.swift */; };
+		D289A1AE267ABC2000C1C631 /* WikipediaResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D289A1AD267ABC2000C1C631 /* WikipediaResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		D289A1A7267A6B1C00C1C631 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		D289A1A9267A6B4400C1C631 /* LocationsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsStore.swift; sourceTree = "<group>"; };
 		D289A1AB267A85D500C1C631 /* EditLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLocationView.swift; sourceTree = "<group>"; };
+		D289A1AD267ABC2000C1C631 /* WikipediaResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				D289A1A7267A6B1C00C1C631 /* Location.swift */,
 				D289A1A5267A51B800C1C631 /* AnnotationView.swift */,
 				D289A1AB267A85D500C1C631 /* EditLocationView.swift */,
+				D289A1AD267ABC2000C1C631 /* WikipediaResult.swift */,
 				D210179D2678235A00863B91 /* Assets.xcassets */,
 				D21017A22678235A00863B91 /* Info.plist */,
 				D210179F2678235A00863B91 /* Preview Content */,
@@ -187,6 +190,7 @@
 				D289A19B267959B300C1C631 /* ContentView.swift in Sources */,
 				D21017AD26782AA300863B91 /* BasicAuthenticationView.swift in Sources */,
 				D21017A9267823ED00863B91 /* UIMapView.swift in Sources */,
+				D289A1AE267ABC2000C1C631 /* WikipediaResult.swift in Sources */,
 				D289A1A6267A51B800C1C631 /* AnnotationView.swift in Sources */,
 				D289A1AA267A6B4400C1C631 /* LocationsStore.swift in Sources */,
 				D289A1A8267A6B1C00C1C631 /* Location.swift in Sources */,

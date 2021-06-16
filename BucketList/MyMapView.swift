@@ -77,7 +77,7 @@ struct MyMapView: View {
                 })
         })
         .sheet(isPresented: $showingEditScreen) {
-            EditLocationView(location: $locationStore.locations[locationStore.selectedLocationIndex])
+            EditLocationView(placemark: $locationStore.locations[locationStore.selectedLocationIndex])
         }
         //.environmentObject(locationStore)
         
