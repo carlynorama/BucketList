@@ -23,6 +23,7 @@ struct MyMapView: View {
 
     var body: some View {
         ZStack {
+
             Map(coordinateRegion: $region, interactionModes: .all, annotationItems: locationStore.all) { location in
                 MapAnnotation(coordinate: location.coordinate, anchorPoint: CGPoint(x: 0.5, y: 0.75)) {
                     
@@ -45,8 +46,12 @@ struct MyMapView: View {
         }
             Circle()
                 .fill(Color.blue)
-                .opacity(0.3)
                 .frame(width: 32, height: 32)
+                .opacity(0.3)
+                //TODO: This should be disabling the blocking of the clicking through, but is not.
+                .allowsHitTesting(false)
+                .disabled(true)
+                
             VStack {
                 Spacer()
                 HStack {
