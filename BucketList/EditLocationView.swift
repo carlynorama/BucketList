@@ -9,8 +9,9 @@ import SwiftUI
 
 struct EditLocationView: View {
     @Environment(\.presentationMode) var presentationMode
-    //@EnvironmentObject var locations:LocationsStore
-    @Binding var location:Location
+    @EnvironmentObject var locationStore:LocationsStore
+    //@Binding var location:Location
+    
     
     
     var body: some View {
@@ -18,11 +19,11 @@ struct EditLocationView: View {
         NavigationView {
             Form {
                 Section {
-                    TextField("Place name", text: $location.title)
-                    TextField("Description", text: $location.subtitle)
+                    TextField("Place name", text: $locationStore.locations[locationStore.selectedLocationIndex].title)
+                    TextField("Description", text: $locationStore.locations[locationStore.selectedLocationIndex].subtitle)
                 }
             }
-            .navigationBarTitle("Edit \(location.title)")
+            .navigationBarTitle("Edit \(locationStore.locations[locationStore.selectedLocationIndex].title)")
             .navigationBarItems(trailing: Button("Done") {
                 self.presentationMode.wrappedValue.dismiss()
             })

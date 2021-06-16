@@ -10,8 +10,8 @@ import MapKit
 
 struct Location: Identifiable {    
     let id = UUID()
-    var title: String = "Unnamed"
-    var subtitle: String = "Unnamed"
+    var title: String = "No title data"
+    var subtitle: String = "No subtitle"
     let coordinate: CLLocationCoordinate2D
     
     
