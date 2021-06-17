@@ -81,10 +81,11 @@ struct MyMapView: View {
                     self.showingEditScreen = true
                 })
         })
-        .sheet(isPresented: $showingEditScreen) {
+        .sheet(isPresented: $showingEditScreen, onDismiss: locationStore.saveData) {
             EditLocationView(placemark: $locationStore.locations[locationStore.selectedLocationIndex])
         }
         //.environmentObject(locationStore)
+        .onAppear(perform: locationStore.loadData)
         
     }
 }

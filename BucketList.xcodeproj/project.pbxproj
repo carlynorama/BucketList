@@ -78,7 +78,6 @@
 		D21017982678235900863B91 /* BucketList */ = {
 			isa = PBXGroup;
 			children = (
-				D21017AC26782AA300863B91 /* BasicAuthenticationView.swift */,
 				D21017992678235900863B91 /* BucketListApp.swift */,
 				D289A19E267960B900C1C631 /* Code Scratch Pads */,
 				D289A19A267959B300C1C631 /* ContentView.swift */,
@@ -106,6 +105,7 @@
 		D289A19E267960B900C1C631 /* Code Scratch Pads */ = {
 			isa = PBXGroup;
 			children = (
+				D21017AC26782AA300863B91 /* BasicAuthenticationView.swift */,
 				D289A1A1267A4A8200C1C631 /* LocationDelegate.swift */,
 				D210179B2678235900863B91 /* MapKitExampleView.swift */,
 				D21017A8267823ED00863B91 /* UIMapView.swift */,
