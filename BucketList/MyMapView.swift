@@ -20,6 +20,16 @@ struct MyMapView: View {
         print("tapped: \(location)")
     }
     
+    private func addLocationAtCenter() {
+        let newLocation =
+            Location(coordinate: region.center)
+        self.locationStore.append(newLocation)
+        self.locationStore.theOneShowingDetails = newLocation
+        showingEditScreen = true
+        //print("location:\(newLocation)")
+        
+    }
+    
 
     var body: some View {
         ZStack {
@@ -58,10 +68,7 @@ struct MyMapView: View {
                     Spacer()
                     Button(
                         action: {
-                            let newLocation = //Location(coordinate: managerDelegate.region.center)
-                                Location(coordinate: region.center)
-                            self.locationStore.append(newLocation)
-                            print("location:\(newLocation)")
+                            addLocationAtCenter()
                         }) {
                         Image(systemName: "plus")
                             .padding()

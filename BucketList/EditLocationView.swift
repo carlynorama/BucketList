@@ -49,7 +49,7 @@ struct EditLocationView: View {
                 
                 
             }
-            .navigationBarTitle("Edit \(placemark.title)")
+            .navigationBarTitle("Edit Location Details")
             .navigationBarItems(trailing: Button("Done") {
                 self.presentationMode.wrappedValue.dismiss()
             })
